@@ -1,3 +1,3 @@
 """
-Pacote principal do sistema SCALE.
+Pacote src do sistema SCALE.
 """ 

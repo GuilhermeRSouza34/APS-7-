@@ -12,9 +12,13 @@ from src.gui.main_window import MainWindow
 
 def main():
     """Função principal que inicia a aplicação."""
+    print("Iniciando aplicação...")
     app = QApplication(sys.argv)
+    print("Criando janela principal...")
     window = MainWindow()
+    print("Mostrando janela...")
     window.show()
+    print("Iniciando loop de eventos...")
     sys.exit(app.exec())
 
 if __name__ == "__main__":
