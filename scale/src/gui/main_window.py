@@ -12,8 +12,8 @@ from typing import Optional, Dict
 import os
 from datetime import datetime
 
-from ..core.lci_manager import LCIManager
-from ..core.emergy_calculator import EmergyCalculator, EmergyResult
+from src.core.lci_manager import LCIManager
+from src.core.emergy_calculator import EmergyCalculator, EmergyResult
 
 class MainWindow(QMainWindow):
     """Janela principal da aplicação."""

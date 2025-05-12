@@ -2,8 +2,13 @@
 Arquivo principal do sistema SCALE.
 """
 import sys
+import os
+
+# Adiciona o diretório raiz ao PYTHONPATH
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
 from PyQt6.QtWidgets import QApplication
-from gui.main_window import MainWindow
+from src.gui.main_window import MainWindow
 
 def main():
     """Função principal que inicia a aplicação."""
