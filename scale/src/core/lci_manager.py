@@ -32,6 +32,12 @@ class LCIManager:
             
             if file_path.endswith('.csv'):
                 df = pd.read_csv(file_path)
+            elif file_path.endswith('.txt'):
+                # Tenta ler como CSV, se der erro tenta como tabulado
+                try:
+                    df = pd.read_csv(file_path)
+                except Exception:
+                    df = pd.read_csv(file_path, sep='\t')
             elif file_path.endswith(('.xlsx', '.xls')):
                 df = pd.read_excel(file_path)
             else:

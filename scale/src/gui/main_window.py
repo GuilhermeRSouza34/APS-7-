@@ -153,7 +153,7 @@ class MainWindow(QMainWindow):
             self,
             "Selecionar arquivo LCI",
             "",
-            "Arquivos CSV (*.csv);;Arquivos Excel (*.xlsx *.xls)"
+            "Arquivos CSV (*.csv);;Arquivos Excel (*.xlsx *.xls);;Arquivos TXT (*.txt)"
         )
         
         if file_path:
